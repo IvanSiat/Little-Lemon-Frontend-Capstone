@@ -12,7 +12,6 @@ function Nav() {
             src={logo}
             alt="Little Lemon logo"
             className="logo"
-            
           ></img></Link>
         <li><Link to="/">
         Home</Link></li>

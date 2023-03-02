@@ -73,7 +73,6 @@ main p {
   max-width: 800px;
 }
 
-/* Footer */
 footer {
   display: flex;
   justify-content: center;
@@ -82,10 +81,13 @@ footer {
   background-color: #495e57;
 }
 
-footer p {
-  font-size: 1rem;
-  color: #999;
+
+menu li{
+  display: inline-block;
+  margin-left: 1rem;
+  
 }
+
 h1 {
   font-size: 3rem;
 
