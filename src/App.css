@@ -1,38 +1,171 @@
-.App {
+/* Example CSS rules for a flexbox layout */
+
+body {
+  font-family: 'Markazi Text', serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #495e57;
+}
+
+/* Logo */
+.logo {
+
+  width: 15%;
+}
+
+/* Navigation */
+nav {
+  font-size: 1.5rem;
+  border-radius: 25px;
+
+}
+
+nav ul {
+  list-style: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav li {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a:hover {
+  color: #f1f514;
+}
+
+nav li a:active{
+  color: rgb(12, 204, 76)
+}
+
+/* Main content */
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Footer */
+footer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 1rem;
+  background-color: #495e57;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #999;
+}
+h1 {
+  font-size: 3rem;
+
+}
+
+h2{
+  font-size: 2rem;
+  border-radius: 25px;
+}
+
+.row1{
+
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.row2 article{
+  background-color: #d1d0d0;
+  margin: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header > img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+}
+
+form {
+  display: grid;
+  max-width: 400px;
+  margin: auto;
+  justify-items: center;
+  gap: 20px;
+}
+
+input,
+select,
+option,
+textarea {
+  background-color: #eeeeee;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 0.2rem;
+  resize: none;
+}
+
+input,
+select {
+  width: 10rem;
+}
+
+button{
+  background-color: #f4ce14;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor:pointer
+}
+
+a {
+  text-decoration:none
+}
+
+.about-us {
+  background-color: #f4ce14;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.25rem 5rem 2.5rem 5rem;
+  min-height: 22rem;
+  margin-bottom: -1rem;
+  grid-gap: 25vw;
 }
